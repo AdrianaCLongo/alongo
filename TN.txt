@@ -17,7 +17,7 @@ soup = bs (page.content, 'html.parser')
 soup = bs(response.text, 'lxml')
 
 # find all 'a' tags with urls
-proj_urls = soup.select_one('div.template-left-nav.tn-leftnav > div').text
+projetos = soup.select_one('div.template-left-nav.tn-leftnav > div').text
 
 print(proj_urls)
 
